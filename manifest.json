@@ -1,0 +1,16 @@
+{
+  "name": "DoubanBook2Shuim",
+  "version": "1.0",
+  "description": "Show shu.im link in douban book",
+  "content_scripts": [{
+      "matches": ["http://book.douban.com/*"],
+      "js": ["js/jquery.js", "js/db2shu.js"]
+  }],
+  "permissions" : [
+    "tabs", "http://shu.im/*"
+  ],
+  "icons" : {
+    "48" : "icon.png",
+    "128" : "icon.png"
+  }
+}
