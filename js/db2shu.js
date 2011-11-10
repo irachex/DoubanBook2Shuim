@@ -30,10 +30,10 @@ function getBookUrl(id) {
 function getButton(url) {
     var btn;
     if (url != '') {
-        btn = '<a href="'+url+'"  title="点击去 shu.im 下载电子版" style="float:left;display: inline-block;background: #33A057;border: 1px solid #2F7B4B;color: white;padding: 1px 10px;border-radius:3px;margin-right: 8px;" target="_blank">shu.im</a>';
+        btn = '<a href="'+url+'?rel=doubanbook2shuim"  title="点击去 shu.im 下载电子版" style="float:left;display: inline-block;background: #33A057;border: 1px solid #2F7B4B;color: white;padding: 1px 10px;border-radius:3px;margin-right: 8px;" target="_blank">shu.im</a>';
     }
     else {
-        btn = '<a href="http://shu.im/books/new?title='+ query +'" title="shu.im 没有找到书籍的电子版，如果你有，可以点击创建书籍" style="float:left;display: inline-block;background: #cc2b2f;border: 1px solid #cc0007;color: white;padding: 1px 10px;border-radius:3px;margin-right: 8px;" target="_blank">shu.im</a>';
+        btn = '<a href="http://shu.im/books/new?title='+ query +'&rel=doubanbook2shuim" title="shu.im 没有找到书籍的电子版，如果你有，可以点击创建书籍" style="float:left;display: inline-block;background: #cc2b2f;border: 1px solid #cc0007;color: white;padding: 1px 10px;border-radius:3px;margin-right: 8px;" target="_blank">shu.im</a>';
     }
     return btn;
 }
